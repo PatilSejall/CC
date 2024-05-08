@@ -1,0 +1,40 @@
+1]
+-Steps create VM1 by clicking on new icon
+-give name and select type as Linux and Version as Ubuntu-64bit
+-leave size to default
+-In hard select use an existing virtual disk and browse downloaded ubuntu and click on create
+
+REPEAT SAME STEPS FOR VM 2
+
+2]
+-now on top right corner click on file
+and choose preference.
+-there choose network and add the network.
+- edit the NAT address to 172.168.2.0/24
+save and close
+
+3]
+-now select VM1 and click on setting option
+-there click on network and select NAT network
+-save and close
+
+REPEAT SAME STEPS FOR VM2
+
+4]Now boot both system
+-Default user and password is vagrant
+
+5]
+-type = sudo apt install net-tools 
+-now create file in VM1 by using the following command
+touch test.txt
+-write in it by = nano test.txt
+-then press Ctr+x -> yes -> enter
+-to see content = cat test.txt
+
+6]FILE TRANSFER COMMAND
+scp.test.txt vagrant@172.168.2.5:/home/vagrant
+(then it will ask for password enter vagrant)
+
+THE FILE TRANSFER IS DONE
+
+7]Check it by using ls command in other cmd

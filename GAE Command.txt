@@ -1,0 +1,13 @@
+Start your Cloud Shell after installation of Gcloud SDK
+After starting the shell you need your local dev app server file to run the application
+So as you have opened the shell, you will have the dev app server file under the relative location of the shell i.e. google-cloud-sdk\bin\dev_appserver.py
+Absolute Path : C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin\dev_appserver.py
+
+Run the application with the following command in shell
+cmd > py google-cloud-sdk\bin\dev_appserver.py <path to the directory where application resides>
+
+
+py google-cloud-sdk\bin\dev_appserver.py address_of_folder_where_app.yml_is_saved
+
+EXAMPLE :-   py google-cloud-sdk\bin\dev_appserver.py C:\Users\Desktop\Practicals\CC\Hello
+

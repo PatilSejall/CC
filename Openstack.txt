@@ -1,0 +1,12 @@
+1. sudo snap install microstack--beta
+ 2. snap list microstack
+ 3. sudo microstack init--auto--control
+ 4. microstack.openstack--version
+ 5. microstack.openstack image list
+ 6. microstack.openstack flavor list
+ 7. to get the IP address use command: hostname-I
+ 8. dashboard URL is https://<ip-address> or
+ https://<ip-address>/dashboard or https://<ip-address>/horizon
+ 9. username for dashboard is 'admin'
+ 10. below command is for getting dashboard password : sudo snap get
+ microstack config.credentials keystone-password
